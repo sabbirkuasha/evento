@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-18 12:14:33.478546",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "information_section",
+  "title",
+  "event_category",
+  "short_description",
+  "column_break_azyq",
+  "medium",
+  "venue",
+  "host",
+  "banner_image",
+  "date_section",
+  "start_date",
+  "start_time",
+  "time_zone",
+  "column_break_drtu",
+  "end_date",
+  "end_time",
+  "details_section",
+  "event_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_azyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "event_category",
+   "fieldtype": "Link",
+   "label": "Event Category",
+   "options": "Event Category",
+   "reqd": 1
+  },
+  {
+   "default": "Online",
+   "fieldname": "medium",
+   "fieldtype": "Select",
+   "label": "Medium",
+   "options": "In-Person\nOnline\nHybrid",
+   "reqd": 1
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Link",
+   "label": "Venue ",
+   "options": "Venue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "information_section",
+   "fieldtype": "Section Break",
+   "label": "Information"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Small Text",
+   "label": "Short Description"
+  },
+  {
+   "fieldname": "date_section",
+   "fieldtype": "Section Break",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_drtu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "description": "Description of the Event",
+   "fieldname": "event_description",
+   "fieldtype": "Text Editor",
+   "label": "Event Description"
+  },
+  {
+   "fieldname": "host",
+   "fieldtype": "Link",
+   "label": "Host",
+   "options": "Event Host",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_zone",
+   "fieldtype": "Select",
+   "label": "Time Zone"
+  },
+  {
+   "fieldname": "banner_image",
+   "fieldtype": "Attach Image",
+   "label": "Banner Image"
+  }
+ ],
+ "image_field": "banner_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-18 14:24:32.076681",
+ "modified_by": "Administrator",
+ "module": "Evento",
+ "name": "B Event",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

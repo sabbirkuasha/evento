@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-08-18 13:48:51.982597",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "logo",
+  "country",
+  "column_break_ufcu",
+  "type_of_company",
+  "address",
+  "section_break_nezw",
+  "about_the_host"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "column_break_ufcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "type_of_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type of Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_nezw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "description": "Details about the Host of the Event",
+   "fieldname": "about_the_host",
+   "fieldtype": "Text Editor",
+   "label": "About the Host"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  }
+ ],
+ "image_field": "logo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-18 14:28:17.721193",
+ "modified_by": "Administrator",
+ "module": "Evento",
+ "name": "Event Host",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
