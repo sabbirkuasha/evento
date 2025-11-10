@@ -133,8 +133,13 @@
  ],
  "image_field": "banner_image",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-08-18 14:24:32.076681",
+ "links": [
+  {
+   "link_doctype": "Event Speaker",
+   "link_fieldname": "b_event"
+  }
+ ],
+ "modified": "2025-11-11 01:39:32.310018",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "B Event",
@@ -153,7 +158,11 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
+ "search_fields": "start_date",
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "title"
 }
