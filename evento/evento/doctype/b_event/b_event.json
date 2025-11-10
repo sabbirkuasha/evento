@@ -8,6 +8,7 @@
   "information_section",
   "title",
   "event_category",
+  "is_published",
   "short_description",
   "column_break_azyq",
   "medium",
@@ -22,7 +23,9 @@
   "end_date",
   "end_time",
   "details_section",
-  "event_description"
+  "event_description",
+  "schedule_tab",
+  "event_flow"
  ],
  "fields": [
   {
@@ -129,6 +132,23 @@
    "fieldname": "banner_image",
    "fieldtype": "Attach Image",
    "label": "Banner Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published?"
+  },
+  {
+   "fieldname": "schedule_tab",
+   "fieldtype": "Tab Break",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "event_flow",
+   "fieldtype": "Table",
+   "label": "Event Flow",
+   "options": "Schedule Item"
   }
  ],
  "image_field": "banner_image",
@@ -139,7 +159,7 @@
    "link_fieldname": "b_event"
   }
  ],
- "modified": "2025-11-11 01:39:32.310018",
+ "modified": "2025-11-11 02:13:42.172318",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "B Event",

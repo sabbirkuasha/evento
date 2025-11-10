@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "b_event",
+  "featured",
   "column_break_mivv",
   "user",
   "full_name",
@@ -52,13 +53,19 @@
    "fieldname": "display_image",
    "fieldtype": "Attach Image",
    "label": "Display Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "featured",
+   "fieldtype": "Check",
+   "label": "Featured?"
   }
  ],
  "grid_page_length": 50,
  "image_field": "display_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-11 01:56:56.543003",
+ "modified": "2025-11-11 02:00:35.923636",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Event Speaker",
