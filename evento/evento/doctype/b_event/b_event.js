@@ -5,8 +5,8 @@ frappe.ui.form.on("B Event", {
 	refresh(frm) {
 		frappe.call("frappe.geo.country_info.get_country_timezone_info")
 		.then(({message})=> {
-			frm.set_df_property("time_zone", "options", message.all_timezones)
-			.catch(() => frappe.msgprint(__("Could not fetch time zones")));;
+			frm.fields_dict.time_zone.set_data(message.all_timezones)
+			// frm.set_df_property("time_zone", "options", message.all_timezones)
 		})
 	},
 });

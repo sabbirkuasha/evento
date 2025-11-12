@@ -125,7 +125,7 @@
   },
   {
    "fieldname": "time_zone",
-   "fieldtype": "Select",
+   "fieldtype": "Autocomplete",
    "label": "Time Zone"
   },
   {
@@ -159,7 +159,7 @@
    "link_fieldname": "b_event"
   }
  ],
- "modified": "2025-11-11 02:13:42.172318",
+ "modified": "2025-11-13 02:40:14.836106",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "B Event",
