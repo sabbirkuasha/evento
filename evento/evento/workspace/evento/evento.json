@@ -1,7 +1,7 @@
 {
  "app": "frappe",
  "charts": [],
- "content": "[{\"id\":\"hpbKKRTAvm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Evento</span>\",\"col\":12}},{\"id\":\"y7SJyZ-TeF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"B Event List\",\"col\":4}}]",
+ "content": "[{\"id\":\"hpbKKRTAvm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Evento</span>\",\"col\":12}},{\"id\":\"y7SJyZ-TeF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"B Event List\",\"col\":4}},{\"id\":\"nEECaU7pm_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New B Event\",\"col\":4}},{\"id\":\"IP9xxHTjj1\",\"type\":\"paragraph\",\"data\":{\"text\":\"Common\",\"col\":12}},{\"id\":\"wTRodNbSSL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Evento DocType List\",\"col\":4}}]",
  "creation": "2025-11-12 00:46:43.129444",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,7 +15,7 @@
  "label": "Evento",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-11-12 01:40:09.276869",
+ "modified": "2025-11-13 00:42:29.242026",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Evento",
@@ -31,6 +31,22 @@
    "color": "Grey",
    "doc_view": "List",
    "label": "B Event List",
+   "link_to": "B Event",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Evento DocType List",
+   "link_to": "DocType",
+   "stats_filter": "[[\"DocType\",\"module\",\"=\",\"Evento\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "New B Event",
    "link_to": "B Event",
    "stats_filter": "[]",
    "type": "DocType"
