@@ -9,6 +9,7 @@
   "user",
   "full_name",
   "featured",
+  "social_links",
   "column_break_mivv",
   "designation",
   "company",
@@ -52,12 +53,18 @@
    "fieldname": "featured",
    "fieldtype": "Check",
    "label": "Featured?"
+  },
+  {
+   "fieldname": "social_links",
+   "fieldtype": "Table",
+   "label": "Social Links",
+   "options": "Social Link"
   }
  ],
  "image_field": "display_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-12 10:08:00.448551",
+ "modified": "2025-11-12 11:41:31.321992",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Event Speaker",

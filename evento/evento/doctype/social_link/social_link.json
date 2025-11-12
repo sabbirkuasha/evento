@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-12 11:39:24.350489",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "social_media",
+  "column_break_jafw",
+  "social_media_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "social_media",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Social Media"
+  },
+  {
+   "fieldname": "column_break_jafw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "social_media_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Social Media URL",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-12 11:41:51.555235",
+ "modified_by": "Administrator",
+ "module": "Evento",
+ "name": "Social Link",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
