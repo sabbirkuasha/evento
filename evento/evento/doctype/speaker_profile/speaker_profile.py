@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class EventSpeaker(Document):
+class SpeakerProfile(Document):
 	pass

@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestEventSpeaker(IntegrationTestCase):
+class IntegrationTestSpeakerProfile(IntegrationTestCase):
 	"""
-	Integration tests for EventSpeaker.
+	Integration tests for SpeakerProfile.
 	Use this class for testing interactions between multiple components.
 	"""
 

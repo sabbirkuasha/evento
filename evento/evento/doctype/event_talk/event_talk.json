@@ -28,13 +28,13 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Speaker",
-   "options": "Event Speaker"
+   "options": "Speaker Profile"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-12 02:04:39.101131",
+ "modified": "2025-11-13 11:48:31.887498",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Event Talk",

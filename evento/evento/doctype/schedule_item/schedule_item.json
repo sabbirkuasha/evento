@@ -50,7 +50,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Speaker",
-   "options": "Event Speaker",
+   "options": "Speaker Profile",
    "read_only": 1
   },
   {
@@ -94,7 +94,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-11-12 02:27:16.102582",
+ "modified": "2025-11-13 11:48:31.681352",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Schedule Item",
