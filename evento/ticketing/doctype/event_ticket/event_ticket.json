@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "event",
+  "booking",
   "column_break_xgwy",
   "ticket_type"
  ],
@@ -31,12 +32,21 @@
    "label": "Ticket Type",
    "options": "Event Ticket Type",
    "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "booking",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Booking",
+   "options": "Event Booking",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-13 15:51:18.341382",
+ "modified": "2025-11-14 01:41:14.502181",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Ticket",

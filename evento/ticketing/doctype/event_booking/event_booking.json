@@ -90,8 +90,13 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2025-11-13 21:02:39.565166",
+ "links": [
+  {
+   "link_doctype": "Event Ticket",
+   "link_fieldname": "event"
+  }
+ ],
+ "modified": "2025-11-14 01:42:54.320720",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Booking",
