@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-13 11:56:11.780654",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_logo",
+  "column_break_nyfj",
+  "event",
+  "column_break_zsmy",
+  "company_name"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "company_logo",
+   "fieldtype": "Attach Image",
+   "label": "Company Logo"
+  },
+  {
+   "fieldname": "column_break_zsmy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_nyfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event",
+   "options": "B Event"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "company_logo",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-13 12:01:42.034201",
+ "modified_by": "Administrator",
+ "module": "Evento",
+ "name": "Event sponsers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

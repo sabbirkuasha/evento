@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "prompt",
  "creation": "2025-08-18 12:14:33.478546",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -155,14 +156,15 @@
  "index_web_pages_for_search": 1,
  "links": [
   {
-   "link_doctype": "Event Speaker",
-   "link_fieldname": "b_event"
+   "link_doctype": "Event sponsers",
+   "link_fieldname": "event"
   }
  ],
- "modified": "2025-11-13 02:40:14.836106",
+ "modified": "2025-11-13 12:04:16.274695",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "B Event",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {
