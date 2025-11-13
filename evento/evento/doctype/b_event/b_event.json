@@ -158,9 +158,21 @@
   {
    "link_doctype": "Event sponsers",
    "link_fieldname": "event"
+  },
+  {
+   "link_doctype": "Event Ticket Type",
+   "link_fieldname": "event"
+  },
+  {
+   "link_doctype": "Event Ticket",
+   "link_fieldname": "event"
+  },
+  {
+   "link_doctype": "Event Booking",
+   "link_fieldname": "event"
   }
  ],
- "modified": "2025-11-13 12:04:16.274695",
+ "modified": "2025-11-13 15:46:20.501183",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "B Event",

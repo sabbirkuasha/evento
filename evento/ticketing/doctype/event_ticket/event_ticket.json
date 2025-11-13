@@ -1,25 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2025-11-13 13:47:25.632467",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_abci"
+  "event",
+  "column_break_xgwy",
+  "ticket_type"
  ],
  "fields": [
   {
-   "fieldname": "section_break_abci",
-   "fieldtype": "Section Break"
+   "allow_in_quick_entry": 1,
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Event",
+   "options": "B Event",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xgwy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "ticket_type",
+   "fieldtype": "Link",
+   "label": "Ticket Type",
+   "options": "Event Ticket Type",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-13 13:47:25.632467",
+ "modified": "2025-11-13 15:51:18.341382",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Ticket",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
@@ -35,6 +56,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",

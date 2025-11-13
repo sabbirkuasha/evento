@@ -12,7 +12,11 @@
   "user",
   "event",
   "section_break_rrgh",
-  "event_attendees"
+  "event_attendees",
+  "section_break_yjzp",
+  "total_amount",
+  "column_break_yebg",
+  "currency"
  ],
  "fields": [
   {
@@ -40,6 +44,7 @@
    "options": "Event Booking Attendee"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "event",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -52,18 +57,42 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "user",
    "fieldtype": "Link",
    "label": "User",
    "options": "User",
    "reqd": 1
+  },
+  {
+   "fieldname": "section_break_yjzp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "non_negative": 1,
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_yebg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-13 13:44:30.872272",
+ "modified": "2025-11-13 16:11:41.203712",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Booking",
@@ -84,6 +113,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "show_title_field_in_link": 1,
