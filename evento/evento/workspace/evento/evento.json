@@ -15,7 +15,7 @@
  "label": "Evento",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-11-13 12:12:01.366035",
+ "modified": "2025-11-13 13:34:49.239943",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Evento",
@@ -43,18 +43,18 @@
   },
   {
    "color": "Grey",
-   "doc_view": "List",
-   "label": "Evento DocType List",
-   "link_to": "DocType",
-   "stats_filter": "[[\"DocType\",\"module\",\"=\",\"Evento\",false]]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
    "doc_view": "New",
    "label": "New B Event",
    "link_to": "B Event",
    "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Evento DocType List",
+   "link_to": "DocType",
+   "stats_filter": "[[\"DocType\",\"module\",\"=\",\"Evento\",false],[\"DocType\",\"module\",\"=\",\"Ticketing\",false]]",
    "type": "DocType"
   }
  ],
