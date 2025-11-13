@@ -38,6 +38,7 @@
    "allow_in_quick_entry": 1,
    "fieldname": "price",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Price",
    "non_negative": 1,
    "options": "currency"
@@ -54,7 +55,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-13 16:00:20.541029",
+ "modified": "2025-11-13 20:48:53.713761",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Ticket Type",

@@ -1,7 +1,7 @@
 {
  "app": "frappe",
  "charts": [],
- "content": "[{\"id\":\"hpbKKRTAvm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">List</span>\",\"col\":12}},{\"id\":\"y7SJyZ-TeF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"B Event List\",\"col\":4}},{\"id\":\"nEECaU7pm_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New B Event\",\"col\":4}},{\"id\":\"IP9xxHTjj1\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h5\\\">Common</span>\",\"col\":12}},{\"id\":\"wTRodNbSSL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Evento DocType List\",\"col\":4}},{\"id\":\"Qpu5nLU4dA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lists\",\"col\":4}},{\"id\":\"MFp39fxz0S\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h5\\\">Data</span>\",\"col\":12}},{\"id\":\"SqYVEmWTNe\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Available Events\",\"col\":4}}]",
+ "content": "[{\"id\":\"hpbKKRTAvm\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">List</span>\",\"col\":12}},{\"id\":\"y7SJyZ-TeF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"B Event List\",\"col\":4}},{\"id\":\"nEECaU7pm_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New B Event\",\"col\":4}},{\"id\":\"cmJbCWLbOy\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"mwM3mj7GED\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event Booking List\",\"col\":4}},{\"id\":\"Qhcm1qqArP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Event Booking\",\"col\":4}},{\"id\":\"ShskjCdBDj\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"82bsxz1N7W\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New B Event\",\"col\":4}},{\"id\":\"IP9xxHTjj1\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h5\\\">Common</span>\",\"col\":12}},{\"id\":\"wTRodNbSSL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Evento DocType List\",\"col\":4}},{\"id\":\"Qpu5nLU4dA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Lists\",\"col\":4}},{\"id\":\"MFp39fxz0S\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h5\\\">Data</span>\",\"col\":12}},{\"id\":\"SqYVEmWTNe\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Available Events\",\"col\":4}}]",
  "creation": "2025-11-12 00:46:43.129444",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,7 +15,7 @@
  "label": "Evento",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-11-13 15:43:45.531790",
+ "modified": "2025-11-13 20:43:47.872040",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Evento",
@@ -51,6 +51,14 @@
   {
    "color": "Grey",
    "doc_view": "New",
+   "label": "New Event Booking",
+   "link_to": "Event Booking",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
    "label": "New B Event",
    "link_to": "B Event",
    "stats_filter": "[]",
@@ -62,6 +70,14 @@
    "label": "Evento DocType List",
    "link_to": "DocType",
    "stats_filter": "[[\"DocType\",\"module\",\"=\",\"Evento\",false],[\"DocType\",\"module\",\"=\",\"Ticketing\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Event Booking List",
+   "link_to": "Event Booking",
+   "stats_filter": "[]",
    "type": "DocType"
   }
  ],
