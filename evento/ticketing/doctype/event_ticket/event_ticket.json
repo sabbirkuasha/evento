@@ -9,7 +9,8 @@
   "event",
   "booking",
   "column_break_xgwy",
-  "ticket_type"
+  "ticket_type",
+  "attendee_name"
  ],
  "fields": [
   {
@@ -29,6 +30,7 @@
    "allow_in_quick_entry": 1,
    "fieldname": "ticket_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Ticket Type",
    "options": "Event Ticket Type",
    "reqd": 1
@@ -41,12 +43,19 @@
    "label": "Booking",
    "options": "Event Booking",
    "reqd": 1
+  },
+  {
+   "fieldname": "attendee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attendee Name",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-14 01:41:14.502181",
+ "modified": "2025-11-14 14:00:08.034215",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Ticket",

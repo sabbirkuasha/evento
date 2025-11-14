@@ -1,7 +1,7 @@
 # Copyright (c) 2025, sabbir.kuasha@gmail.com and contributors
 # For license information, please see license.txt
 
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 
@@ -19,7 +19,6 @@ class EventBooking(Document):
 		currency: DF.Link | None
 		event: DF.Link
 		event_attendees: DF.Table[EventBookingAttendee]
-		name: DF.Int | None
 		total_amount: DF.Currency
 		user: DF.Link
 	# end: auto-generated types
@@ -36,3 +35,23 @@ class EventBooking(Document):
 		
 	def set_currency(self):
 		self.currency = self.event_attendees[0].currency
+
+	def on_submit(self):
+		self.generate_ticket()
+
+	def on_cancel(self):
+		self.cancel_tickets()
+
+	def generate_ticket(self):
+		for attendee in self.event_attendees:
+			ticket = frappe.new_doc("Event Ticket")
+			ticket.event = self.event
+			ticket.booking = self.name 
+			ticket.ticket_type = attendee.ticket_type
+			ticket.attendee_name = attendee.full_name
+			ticket.insert()
+		
+	
+	def cancel_tickets(self):
+		#TODO: cancel function must be written later
+		pass
