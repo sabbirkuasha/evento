@@ -18,7 +18,6 @@ class EventTicket(Document):
 		attendee_name: DF.Data
 		booking: DF.Link
 		event: DF.Link
-		name: DF.Int | None
 		ticket_type: DF.Link
 	# end: auto-generated types
 

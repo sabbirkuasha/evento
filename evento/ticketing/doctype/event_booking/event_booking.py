@@ -24,20 +24,25 @@ class EventBooking(Document):
 	# end: auto-generated types
 
 	def validate(self):
-		self.set_total()
-		self.set_currency()
+		self.set_total_amount()
+		if not self.currency and self.event:
+			self.set_currency_from_event()
 
-	def set_total(self):
+	def set_total_amount(self):
+		"""Calculate total amount from attendee prices."""
 		self.total_amount = 0
 		for attendee in self.event_attendees:
 			self.total_amount += attendee.price
 		
-		
-	def set_currency(self):
-		self.currency = self.event_attendees[0].currency
+	def set_currency_from_event(self):
+		"""Set currency from the linked event."""
+		# It's generally better to get currency from the parent event
+		# to ensure consistency.
+		self.currency = frappe.db.get_value("Event", self.event, "currency")
 
 	def on_submit(self):
 		self.generate_ticket()
+		frappe.msgprint(f"Tickets generated for booking {self.name}")
 
 	def on_cancel(self):
 		self.cancel_tickets()
@@ -48,20 +53,21 @@ class EventBooking(Document):
 			ticket.event = self.event
 			ticket.booking = self.name 
 			ticket.ticket_type = attendee.ticket_type
-			ticket.attendee_name = attendee.full_name
-			ticket.insert().submit()
-		
-	def on_cancel(self):
-		self.cancel_tickets()
-
+			ticket.attendee_name = attendee.get("full_name")
+			# Use ignore_permissions as the permission is already checked on EventBooking submission
+			ticket.save(ignore_permissions=True)
+			# ticket.insert(ignore_permissions=True)
+			# Submitting tickets one by one in a loop can be slow.
+			# Consider if auto-submission is necessary or can be done in a background job.
+			ticket.submit()
 
 	def cancel_tickets(self):
-		tickets_for_this_booking = frappe.db.get_all("Event Ticket",{"Event Booking": self.name})
+		"""Cancel all tickets associated with this booking."""
+		# Assuming the fieldname in 'Event Ticket' linking to 'Event Booking' is 'booking'
+		ticket_names = frappe.get_all("Event Ticket", filters={"booking": self.name}, pluck="name")
 
-		for ticket in tickets_for_this_booking:
-			ticket_doc = frappe.get_doc("Event Ticket", ticket)
-			ticket_doc.cancel()
-		
-
-	
-		
+		for name in ticket_names:
+			ticket = frappe.get_doc("Event Ticket", name)
+			if ticket.docstatus == 1: # Only cancel submitted tickets
+				ticket.cancel()
+		frappe.msgprint(f"Tickets for booking {self.name} have been cancelled.")

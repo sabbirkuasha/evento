@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:ET-{#####}",
  "creation": "2025-11-13 13:47:25.632467",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,6 +11,7 @@
   "column_break_xgwy",
   "ticket_type",
   "attendee_name",
+  "section_break_iaqg",
   "amended_from"
  ],
  "fields": [
@@ -61,16 +62,20 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "section_break_iaqg",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-18 09:56:56.107777",
+ "modified": "2025-11-18 15:47:35.124734",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Ticket",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -89,5 +94,6 @@
  "quick_entry": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "attendee_name"
 }
