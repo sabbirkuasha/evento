@@ -14,6 +14,7 @@ class EventTicket(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
+		amended_from: DF.Link | None
 		attendee_name: DF.Data
 		booking: DF.Link
 		event: DF.Link

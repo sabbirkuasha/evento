@@ -10,7 +10,8 @@
   "booking",
   "column_break_xgwy",
   "ticket_type",
-  "attendee_name"
+  "attendee_name",
+  "amended_from"
  ],
  "fields": [
   {
@@ -50,12 +51,22 @@
    "in_list_view": 1,
    "label": "Attendee Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Event Ticket",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
- "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-11-14 14:00:08.034215",
+ "modified": "2025-11-18 09:56:56.107777",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Ticket",
@@ -76,8 +87,6 @@
   }
  ],
  "quick_entry": 1,
- "row_format": "Dynamic",
- "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
