@@ -11,6 +11,7 @@
   "column_break_xgwy",
   "ticket_type",
   "attendee_name",
+  "qr_code",
   "section_break_iaqg",
   "amended_from"
  ],
@@ -66,12 +67,18 @@
   {
    "fieldname": "section_break_iaqg",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Attach Image",
+   "label": "QR Code"
   }
  ],
+ "image_field": "qr_code",
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-11-19 09:24:49.488083",
+ "modified": "2025-11-19 11:00:15.084842",
  "modified_by": "Administrator",
  "module": "Ticketing",
  "name": "Event Ticket",
