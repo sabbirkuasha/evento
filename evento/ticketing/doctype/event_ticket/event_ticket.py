@@ -22,13 +22,14 @@ class EventTicket(Document):
 		ticket_type: DF.Link
 	# end: auto-generated types
 
-	
+
 	def after_insert(self):
 		self.generate_qr_code()
-	
+
 	def generate_qr_code(self):
-		import qrcode
 		import io
+
+		import qrcode
 
 		img = qrcode.make(self.name)
 		img_bytes = io.BytesIO()
