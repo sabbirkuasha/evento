@@ -1,2 +1,3 @@
 Evento
 Ticketing
+Registration
