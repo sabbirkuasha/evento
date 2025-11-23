@@ -10,8 +10,11 @@
   "event",
   "column_break_kubz",
   "user",
-  "section_break_smtu",
-  "talk_description"
+  "status",
+  "section_break_vkip",
+  "talk_description",
+  "column_break_mlxq",
+  "speakers"
  ],
  "fields": [
   {
@@ -33,10 +36,6 @@
    "options": "User"
   },
   {
-   "fieldname": "section_break_smtu",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "talk_description",
    "fieldtype": "Text Editor",
    "label": "Talk Description",
@@ -47,12 +46,32 @@
    "fieldtype": "Data",
    "label": "Title",
    "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vkip",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "speakers",
+   "fieldtype": "Table",
+   "label": "Speakers",
+   "options": "Proposal Speaker"
+  },
+  {
+   "fieldname": "column_break_mlxq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nShortlisted\nApproved\nRejected"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-23 12:31:25.215634",
+ "modified": "2025-11-23 14:27:56.701938",
  "modified_by": "Administrator",
  "module": "Evento",
  "name": "Talk Proposal",
@@ -78,5 +97,8 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "title"
+ "title_field": "title",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

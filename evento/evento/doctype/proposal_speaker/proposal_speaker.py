@@ -5,22 +5,21 @@
 from frappe.model.document import Document
 
 
-class TalkProposal(Document):
+class ProposalSpeaker(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from evento.evento.doctype.proposal_speaker.proposal_speaker import ProposalSpeaker
 		from frappe.types import DF
 
-		event: DF.Link
-		speakers: DF.Table[ProposalSpeaker]
-		status: DF.Literal["Pending", "Shortlisted", "Approved", "Rejected"]
-		talk_description: DF.TextEditor
-		title: DF.Data
-		user: DF.Link | None
+		email: DF.Data
+		first_name: DF.Data
+		last_name: DF.Data | None
+		parent: DF.Data
+		parentfield: DF.Data
+		parenttype: DF.Data
 	# end: auto-generated types
 
 	pass
